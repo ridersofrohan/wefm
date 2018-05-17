@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Page Title Here -->
+    <title>we:fm</title>
+
+    <!-- Page Description Here -->
+    <meta name="description" content="Listen to music together, again.">
+    <meta name="keywords" content="music, sharing, wefm">
+
+    <!-- Disable screen scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta name="theme-color" content="#000000">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="vendor/css/morphext.css">
+    <link rel="stylesheet" href="vendor/css/animate.css">
+    <script src="vendor/js/morphext.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="teaser">
+        <img class="icon" src="images/icon.png">
+        <div class="listen-with">
+          <span class="listen-with-elem listen-with-1 right">
+            listen with
+          </span>
+          <span class="listen-with-elem listen-with-2 center">
+            :
+          </span>
+          <span class="listen-with-elem listen-with-3 left">
+            <span id="js-rotating">
+              your friends, your family, your teammates, your neighbors, your coworkers, your roommates, your gym partners, your squad, your bois
+            </span>
+          </span>
+        </div>
+        <div>
+          <img class="logo" src="images/logo.png">
+        </div>
+        <div>
+          <a href="DOWNLOAD">
+            <img class="app-store" src="images/appStore.png">
+          </a>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="footer-elem left opaque">
+          <a href="/tos.html"> Terms of Service </a>
+        </span>
+        <span class="footer-elem center">
+          <a href="/join.html"> Join Us </a>
+        </span>
+        <span class="footer-elem right opaque">
+          <a href="/privacy.html"> Privacy Policy </a>
+        </span>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $("#js-rotating").Morphext({
+      // The [in] animation type. Refer to Animate.css for a list of available animations.
+      animation: "fadeInDown",
+      // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+      separator: ",",
+      // The delay between the changing of each phrase in milliseconds.
+      speed: 2500,
+      complete: function () {
+        // Called after the entrance animation is executed.
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    // load the Branch web lib
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="build.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+    // init Branch and pass in your preference to open the app
+    branch.init('BRANCH_KEY');
+    // Trigger your Journeys banner to use the correct redirect mode
+    branch.setBranchViewData({
+            '$uri_redirect_mode': 1
+    });
+  </script>
+</html>

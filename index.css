@@ -1,0 +1,152 @@
+/* Helper styles */
+.opaque {
+  opacity: 0.5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  background-color: #191422;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.teaser {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  width: 50%;
+  text-align: center;
+}
+
+.icon {
+  width: 15%;
+  padding-bottom: 1.0rem;
+}
+
+.logo {
+  padding-top: 1.5rem;
+  width: 15%;
+}
+
+.app-store {
+  padding-top: 1.5rem;
+  width: 20%;
+}
+
+.listen-with {
+  padding-top: 0.5rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.listen-with-1 {
+  width: 50%;
+}
+
+.listen-with-2 {
+  width: 0.5rem;
+}
+
+.listen-with-3 {
+  width: 50%;
+}
+
+.listen-with-elem {
+  padding: 0.25rem;
+  font-size: 2rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-elem {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 33%;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .teaser {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%);
+    width: 100%;
+  }
+
+  .icon {
+    width: 30%;
+  }
+
+  .logo {
+    padding-top: 1.5rem;
+    width: 45%;
+  }
+
+  .app-store {
+    padding-top: 1.5rem;
+    width: 30%;
+  }
+
+  .listen-with-elem {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+  }
+
+  .listen-with-2 {
+    width: 0.5rem;
+  }
+
+  .footer-elem {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 0.9rem;
+  }
+}
