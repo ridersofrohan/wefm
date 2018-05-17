@@ -27,7 +27,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 body {
   background-color: #191422;
   width: 100%;
@@ -47,6 +46,16 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   padding-top: 1rem;
+}
+
+.text {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: left;
+  width: 90%;
 }
 
 .logo {
