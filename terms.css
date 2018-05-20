@@ -43,6 +43,16 @@ body {
   width: 100%;
 }
 
+.home-link {
+  text-align: center;
+  width: 8%;
+}
+
+.home-logo {
+  padding-top: 2rem;
+  width: 100%;
+}
+
 .title {
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -58,11 +68,6 @@ body {
   padding-bottom: 3rem;
   text-align: left;
   width: 90%;
-}
-
-.logo {
-  padding-top: 2rem;
-  width: 8%;
 }
 
 .footer {
