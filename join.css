@@ -45,10 +45,14 @@ body {
   width: 100%;
 }
 
-a .icon {
-  padding-top: 2rem;
+.home-link {
+  text-align: center;
   width: 8%;
-  padding-bottom: 1rem;
+}
+
+.home-logo {
+  padding-top: 2rem;
+  width: 100%;
 }
 
 .jobs-container {
@@ -105,8 +109,6 @@ a .icon {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   padding: 1rem;
   color: white;
   width: 100%;
@@ -125,12 +127,10 @@ a .icon {
 }
 
 @media only screen and (max-width: 768px) {
-  .teaser {
-    position: absolute;
-    top: 40%;
-    -webkit-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
-    width: 100%;
+
+  .home-link {
+    text-align: center;
+    width: 30%;
   }
 
   .jobs-container {
