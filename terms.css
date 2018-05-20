@@ -16,6 +16,22 @@
 span {
   font-family: 'Poppins', sans-serif;
   color: white;
+  box-sizing: border-box;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 a {
@@ -41,6 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 .home-link {
@@ -64,15 +81,26 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: left;
   width: 90%;
 }
 
+.section {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sub-section {
+  padding-left: 1.5rem;
+}
+
+.text ul {
+  padding-left: 6rem;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
   padding: 1rem;
   color: white;
   width: 100%;
@@ -91,9 +119,18 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .logo {
-    padding-top: 1.5rem;
-    width: 45%;
+  .home-link {
+    text-align: center;
+    width: 30%;
+  }
+
+  .text ul {
+    padding-left: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding-top: 0.5rem;
   }
 
   .footer {
