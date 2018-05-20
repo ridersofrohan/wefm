@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+  Rohan Challa -- Lead Engineer -- rchalla769
+  Seb Goddijn -- CTO -- sebgoddijn
+  Midas Kwant -- CEO -- midaskwant
+
+# THANKS
+
+  Rohan, Midas, Seb
+
+# TECHNOLOGY COLOPHON
+
+  CSS3, HTML5
+  Nginx, jQuery, Modernizr, Normalize.css
